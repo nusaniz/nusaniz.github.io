@@ -4,29 +4,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>uji git</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./font-awesome/css/all.css">
+    <title>responsiv</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
+    <!-- header -->
+    <style>
+        header {
+            background-color: coral;
+        }
 
-        <!-- header -->
-        <header>
-            <h1>nusaniz</h1>
-        </header>
-        <!-- header -->
+        .head-cont {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            padding: 10px;
+            /* border: 1px solid white; */
+        }
 
-        <!-- c 1 -->
-        <div class="content1">
-            <h1><i class="fa fa-info-circle"></i> pengertian</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste a laborum eius, ratione molestias in labore
-                voluptatum. Laborum commodi vel voluptatem nisi molestiae necessitatibus eos aut voluptatum! Non, quasi
-                deleniti?</p>
+        .head-cont .logo {
+            width: 5%;
+            /* border: 1px solid white; */
+        }
+
+        .head-cont .logo img {
+            width: 100%;
+            display: block;
+        }
+
+        @media screen and (max-width: 460px) {
+            .head-cont div.logo img {
+                width: 170%;
+            }
+
+            /* div.banner-top-cont h1 {
+                color: white;
+            } */
+        }
+
+        .head-cont .name-site {
+            width: 95%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            /* border: 1px solid white; */
+        }
+
+        .head-cont .name-site h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            /* border: 1px solid white; */
+        }
+    </style>
+    <header>
+        <div class="head-cont">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="name-site">
+                <h1>nusaniz</h1>
             </div>
         </div>
-        <!-- c 1 -->
-    </body>
-    
+    </header>
+    <!-- end header -->
+
+    <!-- nav -->
+    <style>
+        nav {
+            /* border: 1px solid white; */
+            background-color: teal;
+        }
+
+        .nav-cont {
+            max-width: 1200px;
+            margin: 0 auto;
+            /* border: 1px solid white; */
+            display: flex;
+        }
+
+        .navtop {
+            flex: 1;
+            display: flex;
+        }
+
+        .navtop a {
+            font-size: 150%;
+            text-align: center;
+            flex: 1;
+            display: block;
+            background-color: teal;
+            padding: 8px;
+            text-transform: capitalize;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navtop a:hover {
+            background-color: rgb(4, 102, 102);
+        }
+    </style>
+    <nav>
+        <div class="nav-cont">
+            <div class="navtop">
+                <a href="#">java</a>
+            </div>
+            <div class="navtop">
+                <a href="#">java</a>
+            </div>
+            <div class="navtop">
+                <a href="#">java</a>
+            </div>
+            <div class="navtop">
+                <a href="#">java</a>
+            </div>
+            <div class="navtop">
+                <a href="#">java</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- banner top -->
+    <style>
+        .banner-top {
+            /* border: 1px solid; */
+            background-color: rgb(181, 173, 255);
+        }
+
+        .banner-cov {
+            padding: 60px 20px 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid;
+            box-sizing: border-box;
+        }
+
+        .banner-top-cont {
+            /* padding: 2%; */
+            box-sizing: border-box;
+            max-width: 100%;
+            border: 1px solid;
+        }
+
+        .banner-top-cont h1 {
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+
+        .banner-top-cont p {
+            /* border: 1px solid; */
+            /* padding-left: 16px; */
+        }
+    </style>
+    <div class="banner-top">
+        <div class="banner-cov">
+            <div class="banner-top-cont">
+                <h1>selamat datang,</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit non autem laboriosam? Adipisci, eaque
+                    facilis
+                    ut dolores minima, enim repellat quo expedita, amet quasi vel explicabo beatae rem consequatur ea
+                    quas!
+                    Unde, perferendis animi. Dolor?</p>
+
+                <style>
+                    .btn {
+                        margin-top: 1.5%;
+                        /* border: 1px solid; */
+                        padding-left: 1%;
+                        display: flex;
+                    }
+
+                    div.btn a {
+                        border-radius: 15px;
+                        /* border: blue; */
+                        color: white;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        padding: 10px;
+                        background-color: rgb(87, 87, 214);
+                        -webkit-box-shadow: 10px 11px 24px -4px rgba(0, 0, 0, 0.18);
+                        -moz-box-shadow: 10px 11px 24px -4px rgba(0, 0, 0, 0.18);
+                        box-shadow: 10px 11px 24px -4px rgba(0, 0, 0, 0.18);
+                    }
+                </style>
+                <div class="btn">
+                    <a type="button" href="#">selanjutnya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end banner top -->
+
+    <!-- content -->
+    <style>
+        .content {
+            /* margin: ; */
+            background-color: white;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            border: 1px solid orange;
+        }
+    </style>
+    <div class="content">
+        <div class="container">
+
+            <!-- cont 1 -->
+            <style>
+                .cont-1 {
+                    /* margin-top: 100px; */
+                    /* margin-top: 20px; */
+                    box-sizing: border-box;
+                    width: 100%;
+                    border: 1px solid;
+                    padding-left: 50px;
+                }
+
+                .cont1 {
+                    width: 50%;
+                    padding: 20px;
+                    background-color: lightblue;
+                }
+
+                .cont1 h2 {
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                }
+            </style>
+            <div class="cont-1">
+                <div class="cont1">
+                    <h2>apa itu new normal ?</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto libero expedita reiciendis
+                        quibusdam nemo quasi sunt quos ex veritatis nisi nulla assumenda at eum accusamus debitis,
+                        dolores ad incidunt! Quisquam.</p>
+                </div>
+            </div>
+            <!-- cont 1 -->
+
+            <!-- cont 2 -->
+            <style>
+                .cont-2 {
+                    margin-top: 20px;
+                    padding: 10px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    /* border: 1px solid; */
+                }
+
+                .cont2 {
+                    /* border: 1px solid; */
+                }
+
+                .cont2 h2 {
+                    width: 30%;
+                    padding-left: 25px;
+                    /* border: 1px solid; */
+                    text-transform: capitalize;
+                    margin-bottom: 6px;
+                    padding-bottom: 6px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+                }
+            </style>
+            <div class="cont-2">
+                <div class="cont2">
+                    <h2>stand up comedy</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rem quaerat mollitia neque,
+                        dolores eius sunt aliquid, tempora harum consequuntur dignissimos quas quidem inventore? Fugiat
+                        ipsum nihil accusamus eligendi culpa dolores quo, architecto fuga ullam tempora perspiciatis
+                        optio aspernatur nostrum maiores quibusdam reiciendis expedita aliquam id officiis. Cupiditate,
+                        dignissimos hic?</p>
+                </div>
+            </div>
+            <!-- cont 2 -->
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- end content -->
+
+
+
+
+
+
+</body>
+
 </html>
