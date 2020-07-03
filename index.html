@@ -55,7 +55,7 @@
         }
 
         .head-cont .name-site {
-            width: 95%;
+            width: 90%;
             align-items: center;
             justify-content: center;
             display: flex;
@@ -81,9 +81,172 @@
             <div class="name-site">
                 <h1>nusaniz</h1>
             </div>
+
+            <style>
+                .bar-menu {
+                    width: 5%;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* border: 1px solid; */
+                }
+
+                .bar-menu i {
+                    cursor: pointer;
+                }
+
+                .bar-menu #open {
+                    display: block;
+                }
+
+                .bar-menu #close {
+                    display: none;
+                }
+            </style>
+            <div class="bar-menu">
+                <i id="open" onclick="bar()" class="fa fa-bars fa-2x"></i>
+                <i id="close" onclick="barr()" class="fa fa-window-close fa-2x"></i>
+            </div>
         </div>
     </header>
     <!-- end header -->
+
+    <!-- sidebar -->
+    <script>
+        function bar() {
+            var a = document.getElementById("sidebar");
+            var b = document.getElementById("open");
+            var c = document.getElementById("close");
+
+            a.style.display = "block"
+            b.style.display = "none"
+            c.style.display = "block"
+        }
+
+        function barr() {
+            var a = document.getElementById("sidebar");
+            var b = document.getElementById("open");
+            var c = document.getElementById("close");
+
+            a.style.display = ""
+            b.style.display = ""
+            c.style.display = ""
+        }
+
+
+    </script>
+
+    <style>
+        .sidebar {
+            /* margin: 0 auto; */
+            display: none;
+            width: 300px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            /* right: 0; */
+            bottom: 0;
+            /* left: 0; */
+            /* bottom: 0; */
+            background-color: #008080f7;
+            /* border: 1px solid; */
+        }
+
+        .sidebar ul {
+            /* padding: 10px; */
+            /* margin-top: 20px; */
+        }
+
+        .sidebar ul li {
+            padding: 10px 25px;
+            list-style-type: none;
+            cursor: pointer;
+            transition: .3s;
+            text-transform: capitalize;
+            /* font-weight: 600; */
+            /* color: white; */
+            /* border: 1px 0 1px 0 solid; */
+            /* border: 1px solid; */
+        }
+        .sidebar ul li:hover {
+            color: white;
+            letter-spacing: 5px;
+            background-color: rgb(4, 90, 90);
+        }
+
+
+        .sidebar h2 {
+            text-align: center;
+            margin: 10px 0;
+            /* padding: 0 15px; */
+            font-size: 25px;
+            font-weight: 500;
+            text-transform: capitalize;
+            border-bottom: 1px solid #0000000d;
+            /* color: white; */
+            /* border: 1px solid; */
+        }
+
+        .sidebar p {
+            padding-left: 40px;
+            /* padding: 15px; */
+            margin-top: 40px;
+            /* border: 1px solid; */
+        }
+
+        .sidebar h3 {
+            margin-top: 8px;
+            font-weight: 500;
+            text-align: right;
+            font-size: 14px;
+            padding-right: 20px;
+            /* border: 1px solid; */
+        }
+
+        
+    </style>
+    <div class="sidebar" id="sidebar">
+        <h2>menu</h2>
+        <ul>
+            <li onclick="document.location = 'about.html'"><i id="about" class="fa fa-exclamation-circle"></i> about</li>
+            <li onclick="document.location = 'index1.html'">index 1</li>
+            <li onclick="document.location = 'sidebar.html'">sidebar</li>
+            <li onclick="document.location = 'lokasi.html'">lokasi</li>
+        </ul>
+        <p><b>NUSANIZ</b> ©2020 <br>Mojokerto - Sidoarjo</p>
+
+        <h3>Indonesia</h3>
+
+
+        <style>
+            .ceo {
+                margin-top: 100px;
+                width: 100%;
+                box-sizing: border-box;
+                /* border: 1px solid; */
+                /* border-bottom: 1px solid; */
+            }
+
+            .ceo p{
+                margin: 0;
+                text-transform: capitalize;
+            }
+
+            .ceo p i {
+                margin-right: 2px;
+            }
+        </style>
+        <div class="ceo">
+            <p><i class="fa fa-user"></i> nizar narendra</p>
+            <p><i class="fa fa-phone"></i> +62 8231238176</p>
+        </div>
+    </div>
+    <!-- sidebar -->
+
+
+
+
 
     <!-- nav -->
     <style>
