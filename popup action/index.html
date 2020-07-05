@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/font-awesome/css/all.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            display: flex;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .collapse {
+            margin: 5px;
+            height: 160;
+            width: 150px;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .collapse:hover {
+            transform: scale(1.1);
+        }
+
+        .collapse img {
+            width: 100%;
+            display: block;
+        }
+
+        .collapse .desc {
+            width: 100%;
+            font-size: 20px;
+            padding: 10px;
+            /* margin-top: 5px; */
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- ig -->
+
+        <div class="collapse">
+            <a href="#" onclick="btn()">
+                <img src="1.jpg" alt="">
+            </a>
+            <div class="desc">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+
+        <div class="collapse">
+            <a href="#">
+                <img src="1.jpg" alt="">
+            </a>
+            <div class="desc">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+
+        <div class="collapse">
+            <a href="#">
+                <img src="1.jpg" alt="">
+            </a>
+            <div class="desc">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+
+        <div class="collapse">
+            <a href="#">
+                <img src="1.jpg" alt="">
+            </a>
+            <div class="desc">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+        <!-- ig -->
+
+    </div>
+
+    <!-- contbox -->
+    <!-- box -->
+    <style>
+        .box {
+            /* display: none; */
+            width: 86%;
+            display: none;
+            /* width: 40%; */
+            position: fixed;
+            top: 80px;
+            left: 55px;
+            /* margin: 0 auto; */
+            box-sizing: border-box;
+            border: 1px solid;
+            background-color: white;
+        }
+
+        .box-cont {
+            display: flex;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .box img {
+            width: 20%;
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .box .detail {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .box i {
+            cursor: pointer;
+        }
+    </style>
+    <div class="box" id="box">
+        <div class="box-cont">
+            <img src="1.jpg" alt="">
+            <div class="detail">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, suscipit rem. Adipisci blanditiis atque
+                    eveniet aut dolores praesentium porro fugit unde non consectetur nostrum est totam autem, cumque
+                    eligendi corrupti.</p>
+            </div>
+            <div class=""><i onclick="tutup()" class="fa fa-window-close"></i></div>
+        </div>
+    </div>
+    <!-- box -->
+
+    <script>
+        function btn() {
+            var a = document.getElementById("box");
+
+            a.style.display = "block"
+        }
+
+        function tutup() {
+            var a = document.getElementById("box");
+
+            a.style.display = "none"
+        }
+        
+    </script>
+</body>
+
+</html>
