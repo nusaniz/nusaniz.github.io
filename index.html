@@ -5,32 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-      <style>
-        * { color:#fff; text-decoration: none;}
-    
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
     body {
     background-color:#ce3635;
     text-align: center;
     color:#fff;
     padding-top:10em;
-    }
+}
+
+* { color:#fff; text-decoration: none;}
+
     </style>
-  </head>
+</head>
 <body>
 
-<h1>
-<a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-<span class="wrap"></span>
-</a>
-</h1>
-      
-<script>
-  
-  var TxtType = function(el, toRotate, period) {
+
+  <h1>
+    <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+      <span class="wrap"></span>
+    </a>
+  </h1>
+    
+  <script>
+      var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -86,7 +84,7 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
-  
   </script>
+<!-- <script src="script.js"></script> -->
 </body>
 </html>
